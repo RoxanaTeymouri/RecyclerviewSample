@@ -14,7 +14,27 @@
 
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/red</item>
-
     </style>
 
+    <style name="Divider">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/list_divider_heigth</item>
+        <item name="android:background">@color/lightGray</item>
+    </style>
+
+    <style name="Divider.Large">
+        <item name="android:layout_height">@dimen/list_divider_heigth_large</item>
+    </style>
+
+    <style name="DetailItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_smaller</item>
+        <item name="android:layout_margin">@dimen/padding_very_tiny</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:drawablePadding">@dimen/padding_default</item>
+    </style>
 </resources>

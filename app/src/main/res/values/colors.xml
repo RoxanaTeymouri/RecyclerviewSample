@@ -18,6 +18,6 @@
     <color name="underLineColor">#78797A</color>
     <color name="green">#8BC34A</color>
     <color name="red">#F44336</color>
-
+    <color name="lightGray">#eeeeee</color>
     <color name="textColor">#2f3640</color>
 </resources>

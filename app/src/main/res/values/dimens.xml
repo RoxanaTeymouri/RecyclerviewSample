@@ -18,5 +18,7 @@
     <dimen name="text_medium">24sp</dimen>
     <dimen name="text_large">36sp</dimen>
 
-
+    <dimen name="list_divider_heigth_small">0.5dp</dimen>
+    <dimen name="list_divider_heigth">1dp</dimen>
+    <dimen name="list_divider_heigth_large">2dp</dimen>
 </resources>

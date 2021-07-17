@@ -20,5 +20,15 @@
         android:id="@+id/airlineListFragment"
         android:name="com.roksanateimouri.recyclerviewsample.features.airlinlist.AirlineListFragment"
         android:label="airline_list_fragment"
-        tools:layout="@layout/airline_list_fragment" />
+        tools:layout="@layout/airline_list_fragment" >
+        <action
+            android:id="@+id/action_airlineListFragment_to_airlineListDetailFragment"
+            app:destination="@id/airlineListDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/airlineListDetailFragment"
+        android:name="com.roksanateimouri.recyclerviewsample.features.airlinlist.detailitem.AirlineDetailListFragment"
+        android:label="airline_list_detail_fragment"
+        tools:layout="@layout/fragment_airline_list_item_detail" />
 </navigation>

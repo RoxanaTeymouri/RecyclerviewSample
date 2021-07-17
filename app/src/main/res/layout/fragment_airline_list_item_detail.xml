@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.airlinlist.AirlineListFragment">
+
+    <include layout="@layout/item_toolbar_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/DetailItem"
+        android:textColor="@color/greyDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:text="General" />
+
+    <View
+        android:id="@+id/v_one"
+        style="@style/Divider.Large"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        style="@style/DetailItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/text_large"
+        android:src="@drawable/ic_baseline_airplanemode"
+        app:layout_constraintEnd_toStartOf="@+id/tv_airline_name"
+        app:layout_constraintTop_toBottomOf="@+id/v_one" />
+
+    <TextView
+        android:id="@+id/tv_airline_name"
+        style="@style/DetailItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="American"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/v_one" />
+
+    <View
+        android:id="@+id/v_two"
+        style="@style/Divider.Large"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        style="@style/DetailItem"
+        android:drawableLeft="@drawable/ic_baseline_airplanemode"
+        android:text="www.aa.com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_two" />
+
+    <View
+        android:id="@+id/v_three"
+        style="@style/Divider.Large"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_url" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/DetailItem"
+        android:drawableLeft="@drawable/ic_baseline_airplanemode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_three"
+        tools:text="0123456" />
+</androidx.constraintlayout.widget.ConstraintLayout>

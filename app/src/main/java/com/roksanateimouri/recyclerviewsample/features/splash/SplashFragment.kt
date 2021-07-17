@@ -35,8 +35,6 @@ class SplashFragment : BaseFragment() {
         observeErrorMessage(viewModel.getExceptionData())
 
         findNavController().navigate(R.id.action_splashFragment_to_vehicleListFragment)
-
-
         Handler().postDelayed(
             { viewModel.decideNextView(isNetworkAvailable(requireContext())) },
             1500

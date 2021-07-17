@@ -3,6 +3,7 @@ package com.roksanateimouri.recyclerviewsample.base
 import android.content.DialogInterface
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import com.roksanateimouri.recyclerviewsample.R
@@ -33,4 +34,8 @@ abstract class BaseFragment : Fragment() {
      * The dialog for show error and try again request action.
      */
     abstract fun tryAgainDialogAction()
+
 }
+
+
+
