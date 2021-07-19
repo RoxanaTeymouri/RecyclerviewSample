@@ -15,7 +15,7 @@ import com.roksanateimouri.recyclerviewsample.util.isNetworkAvailable
 import org.koin.android.viewmodel.ext.android.viewModel
 
 /**
- * Splash fragment that decides wich page must be shown to the user based on internet connection
+ * Splash fragment that decides witch page must be shown to the user based on internet connection
  *
  */
 class SplashFragment : BaseFragment() {
