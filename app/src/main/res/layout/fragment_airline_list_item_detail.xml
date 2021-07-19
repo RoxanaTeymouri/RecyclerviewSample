@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.airlinlist.AirlineListFragment">
-
+    tools:context=".features.airlinelist.AirlineListFragment">
     <include layout="@layout/item_toolbar_back" />
 
     <TextView
         android:id="@+id/tv_title"
         style="@style/DetailItem"
+        android:padding="@dimen/padding_small"
         android:textColor="@color/greyDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:text="General" />
+        android:text="@string/title_airline_detail" />
 
     <View
         android:id="@+id/v_one"
@@ -28,7 +28,7 @@
         style="@style/DetailItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/text_large"
+        android:layout_marginRight="@dimen/padding_default"
         android:src="@drawable/ic_baseline_airplanemode"
         app:layout_constraintEnd_toStartOf="@+id/tv_airline_name"
         app:layout_constraintTop_toBottomOf="@+id/v_one" />
@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/tv_url"
         style="@style/DetailItem"
-        android:drawableLeft="@drawable/ic_baseline_airplanemode"
+        android:drawableLeft="@drawable/ic_web"
         android:text="www.aa.com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/v_two" />
@@ -67,7 +67,7 @@
     <TextView
         android:id="@+id/tv_phone"
         style="@style/DetailItem"
-        android:drawableLeft="@drawable/ic_baseline_airplanemode"
+        android:drawableLeft="@drawable/ic_phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/v_three"
         tools:text="0123456" />

@@ -1,10 +1,10 @@
 package com.roksanateimouri.recyclerviewsample.features.splash
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-
 import com.roksanateimouri.recyclerviewsample.base.BaseViewModel
-import com.roksanateimouri.recyclerviewsample.pojo.ViewNavigationEnum
+import com.roksanateimouri.recyclerviewsample.pojo.model.AirlineItem
 import com.roksanateimouri.recyclerviewsample.retrofit.RetrofitInterface
 import com.roksanateimouri.recyclerviewsample.util.coroutinesExceptionHandler
 import kotlinx.coroutines.launch
@@ -16,15 +16,16 @@ import kotlinx.coroutines.launch
  */
 class SplashViewModel(private val dataRepository: RetrofitInterface) : BaseViewModel() {
 
-    private val liveData = MutableLiveData<ViewNavigationEnum>()
+    private val liveData = MutableLiveData<List<AirlineItem>>()
 
     fun decideNextView(networkAvailable: Boolean) =
         viewModelScope.launch(coroutinesExceptionHandler(exceptionLiveData)) {
             liveData.postValue(
                 when {
-                    dataRepository.getAirline().isNotEmpty() -> ViewNavigationEnum.VEHICLE_LIST
+                    networkAvailable-> dataRepository.getAirline()
                     else ->  throw IllegalArgumentException("There is a problem in fetching data")
                 }
             )
         }
+    fun getNextPageLiveData(): LiveData<List<AirlineItem>> = liveData
 }

@@ -1,6 +1,6 @@
 package com.roksanateimouri.recyclerviewsample.base.di
 
-import com.roksanateimouri.recyclerviewsample.features.airlinlist.AirlineListViewModel
+import com.roksanateimouri.recyclerviewsample.features.airlinelist.AirlineListViewModel
 import com.roksanateimouri.recyclerviewsample.features.splash.SplashViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module

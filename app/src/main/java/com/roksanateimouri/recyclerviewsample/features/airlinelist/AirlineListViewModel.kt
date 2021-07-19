@@ -1,4 +1,4 @@
-package com.roksanateimouri.recyclerviewsample.features.airlinlist.detailitem
+package com.roksanateimouri.recyclerviewsample.features.airlinelist
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,7 +11,7 @@ import com.roksanateimouri.recyclerviewsample.util.coroutinesExceptionHandler
 import kotlinx.coroutines.launch
 
 /**
- * Fetches data needed by the VehicleList page
+ * Fetches data needed by the AirlineList page
  *
  * @property repository
  */

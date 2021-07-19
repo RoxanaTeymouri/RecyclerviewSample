@@ -5,20 +5,18 @@
     android:id="@+id/main_navigation_graph"
     app:startDestination="@id/splashFragment">
 
-
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.roksanateimouri.recyclerviewsample.features.splash.SplashFragment"
         android:label="splash_fragment"
         tools:layout="@layout/splash_fragment" >
-
         <action
-            android:id="@+id/action_splashFragment_to_vehicleListFragment"
+            android:id="@+id/action_splashFragment_to_airlineListFragment"
             app:destination="@id/airlineListFragment" />
     </fragment>
     <fragment
         android:id="@+id/airlineListFragment"
-        android:name="com.roksanateimouri.recyclerviewsample.features.airlinlist.AirlineListFragment"
+        android:name="com.roksanateimouri.recyclerviewsample.features.airlinelist.AirlineListFragment"
         android:label="airline_list_fragment"
         tools:layout="@layout/airline_list_fragment" >
         <action
@@ -28,7 +26,11 @@
 
     <fragment
         android:id="@+id/airlineListDetailFragment"
-        android:name="com.roksanateimouri.recyclerviewsample.features.airlinlist.detailitem.AirlineDetailListFragment"
+        android:name="com.roksanateimouri.recyclerviewsample.features.airlinelist.detailitem.AirlineDetailListFragment"
         android:label="airline_list_detail_fragment"
-        tools:layout="@layout/fragment_airline_list_item_detail" />
+        tools:layout="@layout/fragment_airline_list_item_detail" >
+        <action
+            android:id="@+id/action_airlineListDetailFragment_to_airlineListFragment"
+            app:destination="@id/airlineListFragment" />
+    </fragment>
 </navigation>

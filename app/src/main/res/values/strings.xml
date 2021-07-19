@@ -3,15 +3,12 @@
     <string name="offline_open_no_data_error">You don\'t have a network connection and have not opened application with an active internet before. Please open the app with an active internet connection at least once.</string>
     <string name="no_data_available_to_show">No data available to show</string>
     <string name="ok">OK</string>
-    <string name="vehicle_type">Type: %s</string>
-    <string name="vehicle_lat">Lat: %s</string>
-    <string name="vehicle_lng">Lng: %s</string>
-    <string name="vehicle_bearing">Heading: %s</string>
-    <string name="vehicle_list">Vehicle List</string>
-    <string name="free_now">Free Now!</string>
+    <string name="splash_name">KAYAK!</string>
     <string name="error_fetching_data">Error fetching data</string>
     <string name="try_again">Try again</string>
     <string name="task_one">Task One</string>
     <string name="task_two">Task Two</string>
+    <string name="title_airline_detail">General</string>
+    <string name="toolbar_title">Airline List</string>
 
 </resources>

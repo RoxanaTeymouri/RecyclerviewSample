@@ -1,4 +1,4 @@
-package com.roksanateimouri.recyclerviewsample.features.airlinlist
+package com.roksanateimouri.recyclerviewsample.features.airlinelist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,14 @@ import androidx.lifecycle.Observer
 
 import com.roksanateimouri.recyclerviewsample.R
 import com.roksanateimouri.recyclerviewsample.base.BaseFragment
-import com.roksanateimouri.recyclerviewsample.features.airlinlist.adapter.AirlineListAdapter
+import com.roksanateimouri.recyclerviewsample.features.airlinelist.adapter.AirlineListAdapter
 import kotlinx.android.synthetic.main.airline_list_fragment.*
 import kotlinx.android.synthetic.main.item_toolbar_back.*
 
 import org.koin.android.viewmodel.ext.android.viewModel
 
 /**
- * Shows a list of previously fetched [com.roksanateimouri.airline.sample.android.pojo.Vehicle]
+ * Shows a list of previously fetched [com.roksanateimouri.airline.sample.android.pojo]
  *
  */
 class AirlineListFragment : BaseFragment() {
@@ -29,14 +29,8 @@ class AirlineListFragment : BaseFragment() {
     ): View? {
         return inflater.inflate(R.layout.airline_list_fragment, container, false)
     }
-
-    override fun tryAgainDialogAction() {
-        viewModel.getAirlins()
-    }
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        txtTitle.text = getString(R.string.vehicle_list)
         observeErrorMessage(viewModel.getExceptionData())
         setUpRecyclerView()
         viewModel.getAirlineListLiveData().observe(viewLifecycleOwner, Observer {
