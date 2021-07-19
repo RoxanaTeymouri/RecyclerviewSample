@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".features.airlinelist.AirlineListFragment">
+
     <include layout="@layout/item_toolbar_back" />
 
     <TextView
         android:id="@+id/tv_title"
         style="@style/DetailItem"
         android:padding="@dimen/padding_default"
-
+        android:layout_margin="@dimen/padding_very_tiny"
         android:textColor="@color/greyDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"

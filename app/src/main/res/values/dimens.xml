@@ -9,7 +9,6 @@
     <dimen name="padding_huge">48dp</dimen>
     <dimen name="padding_extreme">64dp</dimen>
 
-
     <!-- Text sizes -->
     <dimen name="text_tiny">9sp</dimen>
     <dimen name="text_smaller">12sp</dimen>

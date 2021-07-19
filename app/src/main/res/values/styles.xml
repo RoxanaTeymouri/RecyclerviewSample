@@ -7,7 +7,6 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/red</item>
     </style>
